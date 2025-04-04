@@ -34,7 +34,10 @@ const Experience = () => {
           >
             <img src={slowlaxImage}  alt="Manager" className="w-full rounded-lg mb-4" />
             <h3 className="text-xl font-semibold"></h3>
-            <p>Contributing to the GCC Rust project, focusing on parsing and compiler improvements.</p>
+            <p>Manager – National Social Summit
+Led a team to organize the annual summit, coordinating with students from various colleges and managing event logistics. Ensured smooth communication, delegation, and execution of summit activities.
+
+</p>
           </VerticalTimelineElement>
           
           <VerticalTimelineElement
