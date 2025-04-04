@@ -99,12 +99,13 @@ const ChatBotBox = () => {
   
     try {
       const response = await axios.post(
-        "https://chatbot-backend-hh2u.onrender.com",
-        { question: input } // sending user input as JSON body
+        " https://chatbot-backend-hh2u.onrender.com/ask",
+        { question: input }
       );
   
-      const botReply = response.data.reply || "Got it! ✅"; // update based on API's response format
-  
+      const botReply = response.data.answer || "Got it! ✅"; // update based on API's response format
+      console.log(botReply)
+
       setMessages((prev) => [...prev, { from: "bot", text: botReply }]);
     } catch (error) {
       console.error("Error sending message:", error);
