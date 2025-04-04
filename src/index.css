@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: #fefae0; /* Define a CSS variable for background */
+}
+
+body {
+  background-color: var(--bg-color);
+}
