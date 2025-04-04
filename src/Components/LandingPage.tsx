@@ -20,7 +20,7 @@ const LandingPage = () => {
     {/* Name and Quote */}
     <div>
       <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-gray-200">
-        Shivakamalesh
+        Varthya Shiva Kamalesh
       </h1>
       <p className="text-base sm:text-lg md:text-xl italic text-gray-700 dark:text-gray-400 mt-2 max-w-xl">
         Passionate about web development, data analysis, and creating meaningful digital experiences. I enjoy turning ideas into action through clean code, clear communication, and collaborative problem-solving.
