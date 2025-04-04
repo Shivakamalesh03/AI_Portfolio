@@ -18,7 +18,7 @@ const LandingPage = () => {
           {/* Name and Quote */}
           <div className="ml-6">
             <h1 className="text-4xl font-bold text-gray-900 dark:text-gray-200">
-              Shrishvesh Reddy
+              Shivakamalesh
             </h1>
             <p className="text-xl italic text-gray-700 dark:text-gray-400 mt-2">
               "Free your Mind"
@@ -28,7 +28,7 @@ const LandingPage = () => {
 
         {/* Intro Text Section */}
         <p className="text-lg text-gray-800 dark:text-gray-300 leading-relaxed text-left">
-          I like to build stuff. Working towards being a Software Engineer. Currently an Electrical undergrad at IIT Roorkee.
+        
         </p>
       </div>
     </div>

@@ -3,11 +3,11 @@ import LinkedinIcon from "../assets/LinkedinIcon.svg"
 import { Link } from "react-router-dom";
 function TopNavbar() {
         const handleGitHubClick = () => {
-        window.open('https://github.com/yomanthunder', '_blank');
+        window.open('https://github.com/Shivakamalesh03', '_blank');
         };
 
         const handleLinkedInClick = () => {
-        window.open('https://www.linkedin.com/in/shrishvesh', '_blank');
+        window.open('https://www.linkedin.com/in/shivakamalesh', '_blank');
         };
 return (
     <>

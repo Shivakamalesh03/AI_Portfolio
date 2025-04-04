@@ -15,24 +15,25 @@ const Experience = () => {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="2024 - Present"
-            icon={<img src={slowlaxImage} alt="Puma Internship" className="w-full rounded-full border-2 border-black" />}
+            icon={<img src={slowlaxImage} alt="Deputy Cell Secretary" className="w-full rounded-full border-2 border-black" />}
             contentStyle={{ background: '#292929', color: '#fff' }}
             contentArrowStyle={{ borderRight: '7px solid #292929' }}
           >
-            <img src={slowlaxImage}  alt="Puma Internship" className="w-full rounded-lg mb-4" />
-            <h3 className="text-xl font-semibold">Puma Intern - Planning (B2B Ecom)</h3>
-            <p>Working on data-driven planning and analytics for Puma's e-commerce division.</p>
+            <img src={slowlaxImage}  alt="Deputy Cell Secretary" className="w-full rounded-lg mb-4" />
+            <h3 className="text-xl font-semibold">Deputy Cell Secretary</h3>
+            <p>Served as Deputy cell secretary for the web development cell at NSS IIT Roorkee, contributing to content and frontend development for major initiatives.
+            Worked on web design, technical documentation, and digital communication for the National Service Scheme.</p>
           </VerticalTimelineElement>
           
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
             date="2023 - Present"
-            icon={<img src={slowlaxImage} alt="GCC Rust" className="w-full rounded-full border-2 border-black" />}
+            icon={<img src={slowlaxImage} alt="Manager" className="w-full rounded-full border-2 border-black" />}
             contentStyle={{ background: '#fde68a', color: '#000' }}
             contentArrowStyle={{ borderRight: '7px solid #fde68a' }}
           >
-            <img src={slowlaxImage}  alt="GCC Rust" className="w-full rounded-lg mb-4" />
-            <h3 className="text-xl font-semibold">GCC Rust Contributor</h3>
+            <img src={slowlaxImage}  alt="Manager" className="w-full rounded-lg mb-4" />
+            <h3 className="text-xl font-semibold"></h3>
             <p>Contributing to the GCC Rust project, focusing on parsing and compiler improvements.</p>
           </VerticalTimelineElement>
           
