@@ -9,6 +9,13 @@ function TopNavbar() {
         const handleLinkedInClick = () => {
         window.open('https://www.linkedin.com/in/shivakamalesh', '_blank');
         };
+        const handleResumeClick = () => {
+          window.open('https://blush-zita-32.tiiny.site', '_blank');
+        };
+        
+        const handleGmailClick = () => {
+          window.location.href = 'mailto:varthyakamalesh@gmail.com';
+        };
 return (
     <>
         <nav className="fixed top-0 left-0 w-full flex flex-row border-gray-200 p-2 bg-transparent shadow-none transition-all duration-300 z-50">
@@ -57,6 +64,13 @@ return (
             <button onClick={handleLinkedInClick}>
                 <img src={LinkedinIcon} alt="LinkedIn" />
             </button>
+            <button onClick={handleResumeClick}>
+  <img src={GitHubIcon} alt="Resume" />
+</button>
+<button onClick={handleGmailClick}>
+  <img src={GitHubIcon} alt="Gmail" />
+</button>
+
         </nav>
 
 

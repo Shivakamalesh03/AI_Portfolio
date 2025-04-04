@@ -22,6 +22,9 @@ const LandingPage = () => {
             </h1>
             <p className="text-xl italic text-gray-700 dark:text-gray-400 mt-2">
               "Free your Mind"
+              Passionate about web development, data analysis, and creating meaningful digital experiences. I enjoy turning ideas into action through clean code, clear communication, and collaborative problem-solving.
+
+
             </p>
           </div>
         </div>
