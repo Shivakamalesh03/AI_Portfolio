@@ -3,19 +3,22 @@ import { Send } from "lucide-react";
 
 const ChatBotBox = () => {
   const [open, setOpen] = useState(false);
-//   const [messages, setMessages] = useState([]);
+  const [messages, setMessages] = useState([{
+    "from":"",
+    "text":""
+  }]);
   const [input, setInput] = useState("");
 
-//   const handleSend = () => {
-//     if (!input.trim()) return;
-//     setMessages([...messages, { from: "user", text: input }]);
-//     setInput("");
+  const handleSend = () => {
+    if (!input.trim()) return;
+    setMessages([...messages, { from: "user", text: input }]);
+    setInput("");
 
-//     // Placeholder bot reply
-//     setTimeout(() => {
-//       setMessages((prev) => [...prev, { from: "bot", text: "Got it! ✅" }]);
-//     }, 500);
-//   };
+    // Placeholder bot reply
+    setTimeout(() => {
+      setMessages((prev) => [...prev, { from: "bot", text: "Got it! ✅" }]);
+    }, 500);
+  };
 
   return (
     <div className="fixed bottom-10 right-4 z-50">
@@ -24,7 +27,7 @@ const ChatBotBox = () => {
           <div className="bg-blue-600 text-white p-3 rounded-t-2xl font-semibold">
             ChatBot
           </div>
-          {/* <div className="flex-1 p-3 overflow-y-auto space-y-2">
+          <div className="flex-1 p-3 overflow-y-auto space-y-2">
             {messages.map((msg, i) => (
               <div
                 key={i}
@@ -37,7 +40,7 @@ const ChatBotBox = () => {
                 {msg.text}
               </div>
             ))}
-          </div> */}
+          </div>
           <div className="p-2 border-t flex items-center">
             <input
               type="text"
@@ -45,11 +48,11 @@ const ChatBotBox = () => {
               placeholder="Type a message..."
               value={input}
               onChange={(e) => setInput(e.target.value)}
-            //   onKeyDown={(e) => e.key === "Enter" && handleSend()}
+              onKeyDown={(e) => e.key === "Enter" && handleSend()}
             />
             <button
               className="ml-2 text-blue-600"
-            //   onClick={handleSend}
+              onClick={handleSend}
               title="Send"
             >
               <Send size={18} />
