@@ -3,6 +3,7 @@ import "./index.css";
 import TopNavbar from "./Components/TopNavbar";
 import RenderPage from "./Components/RenderPage";
 import Footnotes from "./Components/Footnotes";
+import ChatBotBox from "./Components/Chatbot";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <RenderPage />
       </div>
       <Footnotes />
+      <ChatBotBox/>
     </>
   );
 }
