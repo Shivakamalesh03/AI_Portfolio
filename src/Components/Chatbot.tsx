@@ -73,6 +73,7 @@
 // export default ChatBotBox;
 import { useState, useEffect } from "react";
 import { Send } from "lucide-react";
+import axios from "axios";
 
 const ChatBotBox = () => {
   const [open, setOpen] = useState(false);
@@ -89,15 +90,28 @@ const ChatBotBox = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const handleSend = () => {
+  const handleSend = async () => {
     if (!input.trim()) return;
-    setMessages([...messages, { from: "user", text: input }]);
+  
+    const userMessage = { from: "user", text: input };
+    setMessages([...messages, userMessage]);
     setInput("");
-
-    setTimeout(() => {
-      setMessages((prev) => [...prev, { from: "bot", text: "Got it! ✅" }]);
-    }, 500);
+  
+    try {
+      const response = await axios.post(
+        "https://chatbot-backend-hh2u.onrender.com",
+        { question: input } // sending user input as JSON body
+      );
+  
+      const botReply = response.data.reply || "Got it! ✅"; // update based on API's response format
+  
+      setMessages((prev) => [...prev, { from: "bot", text: botReply }]);
+    } catch (error) {
+      console.error("Error sending message:", error);
+      setMessages((prev) => [...prev, { from: "bot", text: "❌ Error contacting server." }]);
+    }
   };
+
 
   return (
     <div className="fixed bottom-10 right-4 z-50 flex flex-col items-end">
