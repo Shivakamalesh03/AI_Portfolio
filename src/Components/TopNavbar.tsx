@@ -1,5 +1,8 @@
 import GitHubIcon from "../assets/GithubIcon.svg"
 import LinkedinIcon from "../assets/LinkedinIcon.svg"
+import EmailIcon from "../assets/EmailIcon.png"
+import ResumeIcon from "../assets/ResumeIcon1.png"
+
 import { Link } from "react-router-dom";
 function TopNavbar() {
         const handleGitHubClick = () => {
@@ -13,9 +16,7 @@ function TopNavbar() {
           window.open('https://blush-zita-32.tiiny.site', '_blank');
         };
         
-        const handleGmailClick = () => {
-          window.location.href = 'mailto:varthyakamalesh@gmail.com';
-        };
+        
 return (
     <>
         <nav className="fixed top-0 left-0 w-full flex flex-row border-gray-200 p-2 bg-transparent shadow-none transition-all duration-300 z-50">
@@ -58,18 +59,22 @@ return (
           </ul>
                 </div>
             </div>
-            <button onClick={handleGitHubClick}>
-                <img src={GitHubIcon} alt="GitHub" />
-            </button>
-            <button onClick={handleLinkedInClick}>
-                <img src={LinkedinIcon} alt="LinkedIn" />
-            </button>
-            <button onClick={handleResumeClick}>
-  <img src={GitHubIcon} alt="Resume" />
-</button>
-<button onClick={handleGmailClick}>
-  <img src={GitHubIcon} alt="Gmail" />
-</button>
+          <button onClick={handleGitHubClick}>
+          <img src={GitHubIcon} alt="GitHub" className="w-6 h-6" />
+          </button>
+          <button onClick={handleLinkedInClick}>
+          <img src={LinkedinIcon} alt="LinkedIn" className="w-6 h-6" />
+          </button>
+          <button onClick={handleResumeClick}>
+          <img src={ResumeIcon} alt="Resume" className="w-6 h-6" />
+          </button>
+          <a href="/contact">
+  <button>
+    <img src={EmailIcon} alt="Email" className="w-6 h-6" />
+  </button>
+</a>
+
+
 
         </nav>
 
