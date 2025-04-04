@@ -27,7 +27,7 @@ const Experience = () => {
           
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
-            date="2023 - Present"
+            date="2023 - 2024"
             icon={<img src={slowlaxImage} alt="Manager" className="w-full rounded-full border-2 border-black" />}
             contentStyle={{ background: '#fde68a', color: '#000' }}
             contentArrowStyle={{ borderRight: '7px solid #fde68a' }}
