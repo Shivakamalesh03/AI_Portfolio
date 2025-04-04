@@ -3,11 +3,18 @@ import LinkedinIcon from "../assets/LinkedinIcon.svg"
 import { Link } from "react-router-dom";
 function TopNavbar() {
         const handleGitHubClick = () => {
-        window.open('https://github.com/yomanthunder', '_blank');
+        window.open('https://github.com/Shivakamalesh03', '_blank');
         };
 
         const handleLinkedInClick = () => {
-        window.open('https://www.linkedin.com/in/shrishvesh', '_blank');
+        window.open('https://www.linkedin.com/in/shivakamalesh', '_blank');
+        };
+        const handleResumeClick = () => {
+          window.open('https://blush-zita-32.tiiny.site', '_blank');
+        };
+        
+        const handleGmailClick = () => {
+          window.location.href = 'mailto:varthyakamalesh@gmail.com';
         };
 return (
     <>
@@ -57,6 +64,13 @@ return (
             <button onClick={handleLinkedInClick}>
                 <img src={LinkedinIcon} alt="LinkedIn" />
             </button>
+            <button onClick={handleResumeClick}>
+  <img src={GitHubIcon} alt="Resume" />
+</button>
+<button onClick={handleGmailClick}>
+  <img src={GitHubIcon} alt="Gmail" />
+</button>
+
         </nav>
 
 
